@@ -1,12 +1,18 @@
-import React from 'react'
-import { Container, EntryButton, LogoImg, NavbarContainer, NavbarLink, RegisterButton, Wrapper } from './style';
-import LogoPicture from '../../images/logo.svg';
-import { IconButton } from '@mui/material';
+import React from "react";
+import {
+  Container,
+  EntryButton,
+  IconBtn,
+  LogoImg,
+  MenuIconFor,
+  NavbarContainer,
+  NavbarLink,
+  RegisterButton,
+  Wrapper,
+} from "./style";
+import LogoPicture from "../../images/logo.svg";
 
 const Navbar = () => {
-
-
-
   return (
     <Container>
       <Wrapper>
@@ -18,13 +24,13 @@ const Navbar = () => {
           <NavbarLink>Kontakt</NavbarLink>
           <EntryButton>Kirish</EntryButton>
           <RegisterButton>Ro'yhatdan o'tish</RegisterButton>
-          <IconButton>
-              
-          </IconButton>
+          <IconBtn>
+            <MenuIconFor />
+          </IconBtn>
         </NavbarContainer>
       </Wrapper>
     </Container>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
