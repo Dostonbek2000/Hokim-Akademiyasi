@@ -4,13 +4,13 @@ import './App.css';
 //components 
 import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/Home';
+import HomeScreen from './Screens/HomeScreen';
 
 const  App = () => {
   return (
     <Router>
-      <Navbar />
       <Routes>
-        <Route path='/'  element={<Home />}/>
+        <Route path='/'  element={<HomeScreen />}/>
       </Routes>
     </Router>
   );
